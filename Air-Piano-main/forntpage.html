@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Music Instrument Front Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#3a5365] relative min-h-screen overflow-hidden flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="flex justify-center space-x-10 pt-8 text-white text-sm">
+    <a class="font-light hover:underline" href="#">home</a>
+    <a class="font-light hover:underline" href="#">about us</a>
+    <a class="font-light hover:underline" href="#">payment</a>
+    <a class="font-light hover:underline" href="#">options</a>
+    <a class="font-light hover:underline" href="#">more</a>
+  </nav>
+
+  <!-- Main content container -->
+  <main class="relative flex-grow flex flex-col items-center justify-center px-4">
+    <div class="flex space-x-6 z-10">
+      <img class="w-28 h-40 object-contain drop-shadow-lg" src="https://storage.googleapis.com/a1aa/image/e1f0bd6a-9924-483a-5f8e-9637f728b9e3.jpg" alt="Electric guitar"/>
+      <img class="w-24 h-40 object-contain drop-shadow-lg" src="https://storage.googleapis.com/a1aa/image/d4be1bc0-f421-4012-592e-a830cea2eca8.jpg" alt="Acoustic guitar"/>
+      <img class="w-32 h-20 object-contain drop-shadow-lg" src="https://storage.googleapis.com/a1aa/image/5ddeda2e-45c1-4f18-f782-9be8e13d151c.jpg" alt="Keyboard piano"/>
+      <img class="w-32 h-20 object-contain drop-shadow-lg" src="https://storage.googleapis.com/a1aa/image/d2cfe984-705a-499e-84ae-e926a0c1b55a.jpg" alt="Drum set"/>
+    </div>
+  </main>
+
+  <!-- Bottom play/start buttons -->
+  <div class="w-full max-w-[280px] mx-auto mb-10 flex flex-col items-center space-y-6 z-10">
+    <h1 class="text-white text-6xl font-extrabold drop-shadow-[3px_3px_0_rgba(0,0,0,0.5)] leading-none text-center">PLAY</h1>
+    <button id="startButton" class="bg-[#ef6f5f] text-white text-3xl font-semibold rounded-full px-14 py-3 shadow-lg hover:bg-[#e05a44] transition w-full">
+      START
+    </button>
+    <button class="bg-[#ef6f5f] text-white text-3xl font-semibold rounded-full px-14 py-3 shadow-lg hover:bg-[#e05a44] transition w-full">
+      CONTINUE
+    </button>
+    <div class="w-48 h-6 bg-black bg-opacity-30 rounded-full shadow-lg"></div>
+  </div>
+
+  <!-- Shapes and background effects (unchanged from original) -->
+  <img class="absolute top-6 left-20 w-14 h-14 drop-shadow-lg" src="https://storage.googleapis.com/a1aa/image/80a91ffa-b5f3-4fc6-e7b2-202e429547d5.jpg" alt="Red triangle" style="clip-path: polygon(0 0, 100% 0, 0 100%)"/>
+  <img class="absolute top-6 right-20 w-14 h-14 drop-shadow-lg rotate-45" src="https://storage.googleapis.com/a1aa/image/bcc57554-d693-4a90-31ce-0cd6ebef8d12.jpg" alt="Red triangle rotated" style="clip-path: polygon(0 0, 100% 0, 0 100%)"/>
+  <img class="absolute top-20 left-6 w-16 h-16 drop-shadow-lg rounded-full border-8 border-[#f2b57a]" src="https://storage.googleapis.com/a1aa/image/0a912e21-c002-4420-199c-6d3dd5b81285.jpg" alt="Peach ring"/>
+  <img class="absolute bottom-20 right-6 w-16 h-16 drop-shadow-lg rounded-full border-8 border-[#f2b57a]" src="https://storage.googleapis.com/a1aa/image/0a912e21-c002-4420-199c-6d3dd5b81285.jpg" alt="Peach ring"/>
+  <img class="absolute bottom-32 left-10 w-16 h-16 drop-shadow-lg rotate-12 border-8 border-[#6da75a]" src="https://storage.googleapis.com/a1aa/image/d3788276-5a83-4e14-e2a8-521a2a015e43.jpg" alt="Green square"/>
+  <img class="absolute top-10 right-32 w-16 h-16 drop-shadow-lg rotate-12 border-8 border-[#6da75a]" src="https://storage.googleapis.com/a1aa/image/d3788276-5a83-4e14-e2a8-521a2a015e43.jpg" alt="Green square"/>
+  <img class="absolute top-10 right-10 w-14 h-14 drop-shadow-lg rotate-12" src="https://storage.googleapis.com/a1aa/image/ada65816-fc2c-481a-e09a-968f86f3fdaf.jpg" alt="Light blue plus"/>
+  <img class="absolute bottom-10 left-32 w-14 h-14 drop-shadow-lg rotate-12" src="https://storage.googleapis.com/a1aa/image/ada65816-fc2c-481a-e09a-968f86f3fdaf.jpg" alt="Light blue plus"/>
+  <div class="absolute top-16 left-40 w-2 h-2 bg-white rounded-full"></div>
+  <div class="absolute top-24 left-44 w-3 h-3 bg-white rounded-full"></div>
+  <div class="absolute top-28 left-36 w-2 h-2 bg-[#2a3a45] rounded-full"></div>
+  <div class="absolute top-36 left-48 w-2 h-2 bg-white rounded-full"></div>
+  <div class="absolute bottom-24 right-40 w-2 h-2 bg-white rounded-full"></div>
+  <div class="absolute bottom-28 right-44 w-3 h-3 bg-white rounded-full"></div>
+  <div class="absolute bottom-32 right-36 w-2 h-2 bg-[#2a3a45] rounded-full"></div>
+  <div class="absolute bottom-40 right-48 w-2 h-2 bg-white rounded-full"></div>
+
+  <!-- JavaScript to start tracking -->
+  <script>
+    document.getElementById("startButton").addEventListener("click", () => {
+      fetch("/start")
+        .then(response => {
+          if (response.ok) {
+            console.log("✅ Hand tracking started.");
+            alert("Hand tracking started! Switch to camera window.");
+          } else {
+            alert("⚠️ Failed to start tracking.");
+          }
+        })
+        .catch(error => {
+          console.error("❌ Error:", error);
+          alert("Error starting hand tracking.");
+        });
+    });
+  </script>
+</body>
+</html>
